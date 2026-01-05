@@ -1,2 +1,2 @@
-# reya.github.io
+# reya
 personal record and summary
