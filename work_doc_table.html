@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人工作文件资料整理表</title>
-    <!-- 简单美化表格样式，提升可读性 -->
     <style>
+        /* 页面基础样式 */
         body {
             font-family: "Microsoft YaHei", sans-serif;
             max-width: 1200px;
@@ -15,90 +15,39 @@
         h1 {
             text-align: center;
             color: #333;
+            margin-bottom: 30px;
         }
-        table {
+        /* 表格容器，适配不同屏幕 */
+        .table-container {
             width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            overflow: auto; /* 移动端横向滚动 */
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px 15px;
-            text-align: left;
+        /* 调整iframe样式，去掉边框，适配容器 */
+        .table-container iframe {
+            width: 100%;
+            height: 800px; /* 可根据表格行数调整高度 */
+            border: none; /* 去掉默认边框 */
+            min-height: 600px;
         }
-        th {
-            background-color: #f2f2f2;
-            font-weight: bold;
-            color: #333;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        tr:hover {
-            background-color: #f5f5f5;
-        }
-        .note {
+        .tip {
+            text-align: center;
             color: #666;
-            line-height: 1.6;
-            margin-top: 20px;
+            margin-top: 15px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <h1>个人工作文件资料整理表</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>日期</th>
-                <th>文件类型（报告/方案/政策/纪要/其他）</th>
-                <th>已看文件（名称+版本）</th>
-                <th>核心知识点/摘要</th>
-                <th>未看文件（名称+版本）</th>
-                <th>待办事项</th>
-                <th>存储位置</th>
-                <th>备注</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- 这里填写你的日常数据，示例行可保留作为参考 -->
-            <tr>
-                <td>2026-01-05</td>
-                <td>方案</td>
-                <td>2026年度项目规划V2.pdf</td>
-                <td>核心目标是Q1完成3个试点项目，预算控制在50W内</td>
-                <td>竞品分析报告V1.docx</td>
-                <td>明日上午优先阅读，提炼竞品核心优势</td>
-                <td>公司内网-项目文件夹-2026规划</td>
-                <td>关联XX项目，需同步给团队</td>
-            </tr>
-            <!-- 可复制<tr>...</tr>增加更多行 -->
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="note">
-        <p>说明：1. 存储位置建议填写完整路径，如「本地D盘-工作文档-会议纪要.txt」「个人云盘-政策文件-XX通知.docx」；</p>
-        <p>2. 核心知识点提炼聚焦核心结论、关键数据、重要方法，助力快速回顾；</p>
-        <p>3. 如需增加行数，复制表格中&lt;tr&gt;...&lt;/tr&gt;代码块即可。</p>
+    <div class="table-container">
+        <!-- 👇 替换成你的腾讯文档/Google Sheets嵌入代码 -->
+        <!-- 示例（腾讯文档嵌入代码格式，仅作参考）： -->
+        <iframe src="https://www.kdocs.cn/l/cmhAnXxRprJ9" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto"></iframe>
+    </div>
+    <div class="tip">
+        提示：直接在腾讯文档/Google Sheets中编辑表格，此页面会自动同步更新
     </div>
 </body>
 </html>
